@@ -28,11 +28,18 @@ echo $gistcat >gistcat.txt
 read -p"[ File Name ] : " cat
 mv gistcat.txt $cat
 echo
+if [ -f /data/data/com.termux/files/home/.gist ];
+  then
+gist $cat
+rm -rf $cat
+clear
+  else
 gist --login
 echo
 gist $cat
 rm -rf $cat
 clear
+  fi
 echo '   ____ _     _    ____      _'   
 echo '  / ___(_)___| |_ / ___|__ _| |_'
 echo ' | |  _| / __| __| |   / _` | __|'
