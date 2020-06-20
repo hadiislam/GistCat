@@ -51,15 +51,16 @@ read -p"[ ? ] Choose : " tab
 if [ $tab = 1 ]
 then
 clear
-sh gistcat
+sh gist.sh
 fi
 
 if [ $tab = 2 ]
 then
 clear
 cd
-rm -rf gistcat
+rm -rf gist.sh
 curl -o gist.sh https://github.com/hadiislam/GistCat/gistcat
+chmod +x *
 sh gistcat
 fi
 
