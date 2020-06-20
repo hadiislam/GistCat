@@ -1,3 +1,3 @@
 ###For Install
 <br>
-curl -o gistcat https://github.com/hadiislam/GistCat/gistcat
+curl -o gist.sh https://github.com/hadiislam/GistCat/gist.sh
